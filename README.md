@@ -1,3 +1,3 @@
 # LaTeX documents
 
-Contains resume / CV and other templates.
+Contains resume and other useful docs. 
