@@ -1,8 +1,8 @@
-PWD /Users/endothermiic/Desktop/Resume
+PWD /Users/endothermiic/Library/CloudStorage/OneDrive-UniversityofToronto/latex_docs/Resume
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/endothermiic/Desktop/Resume/resume.tex
+INPUT /Users/endothermiic/Library/CloudStorage/OneDrive-UniversityofToronto/latex_docs/Resume/resume.tex
 OUTPUT resume.log
 INPUT ./resume.cls
 INPUT ./resume.cls
