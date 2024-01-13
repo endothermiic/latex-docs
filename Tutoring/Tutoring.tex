@@ -1,0 +1,86 @@
+% Install necessary packages
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{color, colortbl}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{anyfontsize}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+\usepackage{sectsty}
+
+% Define new font sizes for sections and subsections
+\sectionfont{\fontsize{24}{24}\selectfont}
+\subsectionfont{\fontsize{20}{20}\selectfont}
+
+\begin{document}
+
+\begin{center}
+  \fontsize{50pt}{50pt}\selectfont \textbf{Math/CS Tutoring} \\
+  \vspace{0.25cm}
+  \fcolorbox{white}{yellow}{\fontsize{30pt}{30pt}\selectfont {sessions held in-person or online}} 
+    \vspace{0.5cm}
+  % [h!] keeps the image in place
+  \begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={$x$},
+            ylabel={$y$},
+            domain=0:5*pi,
+            samples=300,
+            axis lines=middle,
+            height=6cm,
+            width=12cm,
+            xmin=0, xmax=5*pi,
+            ymin=-1.5, ymax=1.5,
+            ticks=none,
+            ]
+            \addplot[red, thick] {cos(deg(4*x))*exp(-0.2*x)};
+            \addplot[blue, thick] {-exp(-0.3*x)*sin(deg(2*x)-pi)};
+            \addlegendentry{$e^{-0.2x}\cos{4x}$}
+            \addlegendentry{$e^{-0.3x}\sin{2x}$}
+        \end{axis}
+    \end{tikzpicture}
+\end{figure}
+\end{center}
+
+\section*{Courses Offerred}
+\fontsize{30pt}{30pt}\selectfont {Life Science : }
+\fcolorbox{white}{Lavender}{\fontsize{30pt}{30pt}\selectfont {MAT135/136}} 
+\fcolorbox{white}{SpringGreen}{\fontsize{30pt}{30pt}\selectfont {CSC108/148}} 
+\newline
+\fontsize{30pt}{30pt}\selectfont {Engineering :}
+\fcolorbox{white}{Orange}{\fontsize{30pt}{30pt}\selectfont {MAT186/187}} 
+\fcolorbox{white}{SkyBlue}{\fontsize{30pt}{30pt}\selectfont {APS105/106}} 
+%\LARGE \begin{itemize}
+  %\item  \LARGE {Life Science: MAT135/136, CSC108/148}
+  %\item {Engineering: MAT186/187, APS105}
+  %\item {Engineering: APS163, MAT186/187, MAT188 (inc. MATLAB \includegraphics[height=\fontcharht\font`\B]{matlab.png})}
+%\end{itemize}
+\fcolorbox{white}{yellow} { \section*{Email for Info: uofttutoring2@gmail.com}}
+\vspace{-0.3cm}
+\begin{figure}[h!]
+    \centering
+    \begin{tabular}{c}
+        \includegraphics[width=0.35\textwidth]{email.png} \\
+        %\cellcolor{SkyBlue}\Huge uofttutoring2@gmail.com
+    \end{tabular}
+    
+\end{figure}
+
+% \begin{figure}[h!]
+%     \centering
+%     \begin{tabular}{c c c} 
+%             \includegraphics[width=0.35\textwidth]{email.png} & \;\; & \includegraphics[width=0.35\textwidth]{sms.png}  \\ \cellcolor{SpringGreen} \huge email & \;\; & \cellcolor{Goldenrod} \huge sms \rule{0pt}{0.6 \normalbaselineskip} \\ 
+%             % \cellcolor{SpringGreen} \huge email_name & \;\; & \cellcolor{Goldenrod} \huge phone_number \rule{0pt}{0.75 \normalbaselineskip} \\ 
+%     \end{tabular}
+% \end{figure}
+
+\thispagestyle{empty}
+\vfill
+
+\end{document}
